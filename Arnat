@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manap Arnat - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background 0.5s, color 0.5s;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .btn {
+            background-color: orange;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: darkorange;
+        }
+        .theme-toggle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: cyan;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .light-mode {
+            background-color: white;
+            color: red;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #222;
+        }
+        .sports-gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Manap Arnat - Portfolio</header>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>I am a very hardworking person, I love studying and working on my hobbies. As a hobby, I refer to game making, basketball, volleyball, swimming and working out. Other than that I love studying to improve my intellectual skills. I believe that the person must keep learning non-stop during his lifetime.</p>
+        
+        <h2>Programming Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>C# (Game Development)</li>
+            <li>C++</li>
+        </ul>
+        
+        <h2>Projects</h2>
+        <p>I won a business project competition named TETR disrupt, where I earned 100,000 dollars from it. Furthermore, I won lots of essay writing prompts and had a 2-month trip to Los Angeles and lived in the fanciest hotel around.</p>
+        
+        <h2>Sports Achievements</h2>
+        <p>Winner of the intercountry tournament of Volleyball named YoungLfe and the one who got nominated for the best goalkeeper for 3 years throughout the tournament of Catev.</p>
+        <h2>Additional Information</h2>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>Abayudna 667</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>manaparnat918@gmail.com </td>
+            </tr>
+            <tr>
+                <td>Income</td>
+                <td>100,000 dollars/month</td>
+            </tr>
+        </table>
+        
+        <h2>Contact</h2>
+        <p>Email: manaparnat918@gmail.com</p>
+        <p>GitHub: <a href=” https://github.com/Arnatikk/My-profile-.git " target="_blank">Arnat</a></p>
+        <p>YouTube: Arnatikk</p>
+
+</div>
+</body>
+<script>
+    function toggleTheme() {
+        document.body.classList.toggle("light-mode");
+    }
+</script>
+</html>
+
